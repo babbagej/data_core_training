@@ -120,7 +120,7 @@ trankplot <- function( object , bins=30 , pars , chains , col=rethink_palette , 
     # make window
     #set_nice_margins()
     if ( add==FALSE ) {
-        par(mgp = c(0.5, 0.5, 0), mar = c(1.5, 1.5, 1.5, 1) + 0.1, tck = -0.02)
+        par(mgp = c(0.5, 0.5, 0), mar = c(1.5, 1.5, 1.5, 1) + 0.1, tck = -0.01)
         par(mfrow=c(n_rows_per_page,n_cols))
     } 
     # draw traces
