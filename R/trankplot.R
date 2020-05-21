@@ -9,7 +9,7 @@ rank_mat <- function( x ) {
     matrix( rank(x) , ncol=ncol(x) )
 }
 
-trankplot <- function( object , bins=30 , pars , chains , col=rethink_palette , alpha=1 , bg=col.alpha("black",0.15) , ask=TRUE , window , n_cols=3 , max_rows=5 , lwd=1.5 , lp=FALSE  , axes=FALSE , off=0 , add=FALSE , stacked=FALSE , ... ) {
+trankplot <- function( object , bins=20 , pars , chains , col=rethink_palette , alpha=1 , bg=col.alpha("black",0.15) , ask=TRUE , window , n_cols=3 , max_rows=5 , lwd=1.5 , lp=FALSE  , axes=FALSE , off=0 , add=FALSE , stacked=FALSE , ... ) {
     
     if ( !(class(object) %in% c("map2stan","ulam","stanfit")) ) stop( "requires map2stan, ulam or stanfit object" )
     
